@@ -1,0 +1,14 @@
+{namespace be=TYPO3\CMS\Backend\ViewHelpers}
+{namespace bu=TYPO3\CMS\Beuser\ViewHelpers}
+
+<f:layout name="Default" />
+
+<f:section name="headline">
+	<h1><f:translate key="backendUserGroupListing" /></h1>
+</f:section>
+
+<f:section name="content">
+
+	<f:render partial="BackendUserGroup/PaginatedListWidget" arguments="{_all}" />
+
+</f:section>

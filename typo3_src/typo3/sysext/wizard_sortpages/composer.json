@@ -1,0 +1,33 @@
+{
+	"name": "typo3/cms-wizard-sortpages",
+	"type": "typo3-cms-framework",
+	"description": "A little utility to rearrange the sorting order of pages in the backend.",
+	"homepage": "https://typo3.org",
+	"license": ["GPL-2.0-or-later"],
+	"authors": [{
+		"name": "TYPO3 Core Team",
+		"email": "typo3cms@typo3.org",
+		"role": "Developer"
+	}],
+	"config": {
+		"sort-packages": true
+	},
+	"require": {
+		"php": "^7.0",
+		"typo3/cms-core": "8.7.32",
+		"typo3/cms-func": "8.7.32"
+	},
+	"extra": {
+		"typo3/cms": {
+			"Package": {
+				"partOfFactoryDefault": true
+			},
+			"extension-key": "wizard_sortpages"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"TYPO3\\CMS\\WizardSortpages\\": "Classes/"
+		}
+	}
+}

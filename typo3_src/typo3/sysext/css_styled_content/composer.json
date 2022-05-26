@@ -1,0 +1,30 @@
+{
+	"name": "typo3/cms-css-styled-content",
+	"type": "typo3-cms-framework",
+	"description": "Contains configuration for CSS content-rendering of the table \"tt_content\". This is meant as a modern substitute for the classic \"content (default)\" template which was based more on <font>-tags, while this is pure CSS.",
+	"homepage": "https://typo3.org",
+	"license": ["GPL-2.0-or-later"],
+	"authors": [{
+		"name": "TYPO3 Core Team",
+		"email": "typo3cms@typo3.org",
+		"role": "Developer"
+	}],
+	"config": {
+		"sort-packages": true
+	},
+	"require": {
+		"php": "^7.0",
+		"typo3/cms-core": "8.7.32",
+		"typo3/cms-frontend": "8.7.32"
+	},
+	"autoload": {
+		"psr-4": {
+			"TYPO3\\CMS\\CssStyledContent\\": "Classes/"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "css_styled_content"
+		}
+	}
+}

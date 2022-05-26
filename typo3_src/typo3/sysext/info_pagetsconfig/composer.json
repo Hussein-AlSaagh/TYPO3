@@ -1,0 +1,36 @@
+{
+	"name": "typo3/cms-info-pagetsconfig",
+	"type": "typo3-cms-framework",
+	"description": "Displays the compiled Page TSconfig values relative to a page.",
+	"homepage": "https://typo3.org",
+	"license": ["GPL-2.0-or-later"],
+	"authors": [{
+		"name": "TYPO3 Core Team",
+		"email": "typo3cms@typo3.org",
+		"role": "Developer"
+	}],
+	"config": {
+		"sort-packages": true
+	},
+	"require": {
+		"php": "^7.0",
+		"typo3/cms-core": "8.7.32",
+		"typo3/cms-info": "8.7.32"
+	},
+	"conflict": {
+		"typo3/cms": "*"
+	},
+	"extra": {
+		"typo3/cms": {
+			"Package": {
+				"partOfFactoryDefault": true
+			},
+			"extension-key": "info_pagetsconfig"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"TYPO3\\CMS\\InfoPagetsconfig\\": "Classes/"
+		}
+	}
+}

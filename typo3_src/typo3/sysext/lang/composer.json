@@ -1,0 +1,43 @@
+{
+	"name": "typo3/cms-lang",
+	"type": "typo3-cms-framework",
+	"description": "Contains all the core language labels in a set of files mostly of the \"locallang\" format. This extension is always required in a TYPO3 install.",
+	"homepage": "https://typo3.org",
+	"license": ["GPL-2.0-or-later"],
+	"authors": [{
+		"name": "TYPO3 Core Team",
+		"email": "typo3cms@typo3.org",
+		"role": "Developer"
+	}],
+	"config": {
+		"sort-packages": true
+	},
+	"require": {
+		"php": "^7.0",
+		"typo3/cms-core": "8.7.32",
+		"typo3/cms-extensionmanager": "8.7.32"
+	},
+	"conflict": {
+		"typo3/cms": "*"
+	},
+	"extra": {
+		"typo3/cms": {
+			"Package": {
+				"protected": true,
+				"partOfFactoryDefault": true,
+				"partOfMinimalUsableSystem": true
+			},
+			"extension-key": "lang"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"TYPO3\\CMS\\Lang\\": "Classes/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"TYPO3\\CMS\\Lang\\Tests\\": "Tests/"
+		}
+	}
+}

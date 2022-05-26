@@ -1,0 +1,32 @@
+{
+	"name": "typo3/cms-context-help",
+	"type": "typo3-cms-framework",
+	"description": "Provides context sensitive help to tables, fields and modules in the system languages.",
+	"homepage": "https://typo3.org",
+	"license": ["GPL-2.0-or-later"],
+	"authors": [{
+		"name": "TYPO3 Core Team",
+		"email": "typo3cms@typo3.org",
+		"role": "Developer"
+	}],
+	"config": {
+		"sort-packages": true
+	},
+	"require": {
+		"php": "^7.0",
+		"typo3/cms-core": "8.7.32"
+	},
+	"extra": {
+		"typo3/cms": {
+			"Package": {
+				"partOfFactoryDefault": true
+			},
+			"extension-key": "context_help"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"TYPO3\\CMS\\ContextHelp\\": "Classes/"
+		}
+	}
+}
